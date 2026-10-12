@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathis Weil · ML engineer and researcher, London</title>
+<meta name="description" content="ML engineer and researcher working on diffusion planners, RL fine-tuning and federated learning. Open to ML engineering, applied research and data science roles in London.">
+<meta name="theme-color" content="#0d1117">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://mathisweil.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mathis Weil">
+<meta property="og:description" content="ML engineer and researcher working on diffusion planners, RL fine-tuning and federated learning. Open to ML engineering, applied research and data science roles in London.">
+<meta property="og:url" content="https://mathisweil.github.io/">
+<meta property="og:image" content="https://mathisweil.github.io/assets/og.png">
+<meta property="og:image:width" content="1680">
+<meta property="og:image:height" content="960">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="preload" href="assets/fonts/stix-two-text.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/stix-two-text-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/source-code-pro.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-text">
+    <!-- Portrait: add assets/portrait.jpg (240x240, under 60 KB) and uncomment the next line. -->
+    <!-- <span class="portrait ticks"><img src="assets/portrait.jpg" width="120" height="120" alt="Mathis Weil"></span> -->
+    <h1>Mathis Weil</h1>
+    <p class="tagline">ML engineer and researcher working on <em>diffusion planners</em>, RL fine-tuning and federated learning.</p>
+    <p class="lede">I have just finished the MSc in Data Science and Machine Learning at UCL, with a co-first-authored NeurIPS 2026 workshop paper on masked diffusion planners and a thesis on federated gradient boosting for insurance pricing, in collaboration with Ki, a digital syndicate in the Lloyd's market.</p>
+    <p class="status"><strong>Open to ML engineering, applied research and data science roles in London.</strong> Eligible for the UK Graduate visa, no sponsorship needed.</p>
+    <nav aria-label="Contact and profiles">
+      <ul class="links">
+        <li><a class="primary" href="mailto:mathis.weil@outlook.com">Email</a></li>
+        <li><a class="primary" href="assets/mathis-weil-cv.pdf">CV (PDF)</a></li>
+        <li><a href="https://github.com/mathisweil">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mathis-weil/">LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=HZLNhcoAAAAJ">Google Scholar</a></li>
+        <li><a href="https://openreview.net/profile?id=~Mathis_Weil1">OpenReview</a></li>
+        <li><a href="https://huggingface.co/mathisweil">Hugging Face</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <figure class="plan-panel ticks">
+    <div class="plan-head">
+      <span class="label">plan · 64 moves</span>
+      <span class="plan-ctl"><span class="label ink" data-status aria-hidden="true">denoise 10/10</span></span>
+    </div>
+    <div class="plan" aria-hidden="true">
+      <i data-d="4"></i><i data-d="4"></i><i data-d="4"></i><i data-d="4"></i><i data-d="4"></i><i data-d="4"></i><i data-d="4"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="2"></i><i data-d="2"></i><i data-d="2"></i><i data-d="2"></i>
+      <i data-d="2"></i><i data-d="2"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="0"></i><i data-d="0"></i><i data-d="0"></i><i data-d="0"></i><i data-d="7"></i><i data-d="7"></i><i data-d="7"></i><i data-d="7"></i><i data-d="7"></i>
+      <i data-d="7"></i><i data-d="7"></i><i data-d="3"></i><i data-d="3"></i><i data-d="3"></i><i data-d="3"></i><i data-d="3"></i><i data-d="3"></i><i data-d="3"></i><i data-d="2"></i><i data-d="2"></i><i data-d="2"></i><i data-d="2"></i><i data-d="2"></i><i data-d="1"></i><i data-d="1"></i>
+      <i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="1"></i><i data-d="0"></i><i data-d="0"></i><i data-d="0"></i><i data-d="0"></i><i data-d="0"></i><i data-d="4"></i><i data-d="4"></i><i data-d="4"></i><i data-d="4"></i><i data-d="4"></i>
+    </div>
+    <figcaption>Illustrative: a masked diffusion planner drafts all 64 moves at once over 10 denoising steps and can remask and revise any of them.</figcaption>
+  </figure>
+</header>
+
+<main id="main">
+
+<section class="band" id="research">
+  <h2 class="label">Research</h2>
+  <div class="content">
+
+    <article class="entry" id="paper">
+      <div class="entry-head">
+        <h3>Return-Weighted ELBO Fine-Tuning Degrades Masked Diffusion Planners</h3>
+        <span class="kicker">NeurIPS 2026 · BeNTo</span>
+      </div>
+      <p class="authors">Muhammad Ali Khan*, <strong>Mathis Weil</strong>*, Ahmet H. Güzel, Jack Parker-Holder, Ilija Bogunovic</p>
+      <p class="venue"><a href="https://bento-neurips.github.io/"><em>NeurIPS 2026 Workshop: Beyond Next-Token Prediction (BeNTo)</em></a> · Sydney, December 2026 <span class="note">· * equal contribution</span></p>
+      <ul class="links">
+        <li><a href="https://openreview.net/forum?id=VGyjG8Gy29">Paper</a></li>
+        <li><span class="muted">Code:</span> <a href="https://github.com/mathisweil/craftax-ReMDM-planner">Craftax (JAX)</a>, <a href="https://github.com/mathisweil/minihack-ReMDM-planner">MiniHack (PyTorch)</a></li>
+        <li><span class="muted">Checkpoints:</span> <a href="https://huggingface.co/mathisweil/remdm-craftax-checkpoints">Craftax</a>, <a href="https://huggingface.co/mathisweil/remdm-minihack-checkpoints">MiniHack</a></li>
+      </ul>
+      <p>Masked diffusion planners denoise a whole action plan at once and can revise any part of it. Fine-tuning them on return with a return-weighted ELBO, the standard tractable objective, makes them worse.</p>
+      <ul class="findings">
+        <li><strong>No condition beats the starting checkpoint on Craftax Classic.</strong> The planner scores 11.81; after 500 iterations the baseline scores 8.22, and none of 25 conditions (three seeds each) ends above where it started.</li>
+        <li><strong>The return signal does not explain the drop.</strong> An exact gradient decomposition puts the return term at about half the imitation gradient, yet advantage clipping, which cuts it fivefold, scores lower still.</li>
+        <li><strong>Most of the drop is a sampling mismatch.</strong> In a same-host re-run, collecting rollouts at the evaluation settings shrinks the drop from 3.68 to 0.26 points.</li>
+      </ul>
+      <p class="role"><span class="label">Role</span>Co-first author and lead developer of both codebases (Craftax in JAX, MiniHack in PyTorch); coursework team of four, January to September 2026.</p>
+      <figure class="fig ticks">
+        <a href="assets/craftax-before-after.gif">
+          <picture>
+            <source media="screen and (prefers-reduced-motion: no-preference)" srcset="assets/craftax-before-after.gif">
+            <img src="assets/craftax-before-after-poster.png" width="840" height="480" loading="lazy" alt="Craftax Classic, world seed 9, two planners side by side. The DAgger checkpoint unlocks 15 of 22 achievements and is killed by a zombie at night at step 245. After return-weighted ELBO fine-tuning the same planner unlocks 10 and is killed by a zombie at night at step 191; it never drinks water, eats a cow, wakes from sleep, makes a stone pickaxe or defeats a zombie. Paper score 11.81 (checkpoint) to 8.22 (mean of three seeds).">
+          </picture>
+        </a>
+        <figcaption>Same world and seed (seed 9, picked by a fixed rule; the script prints the sweep). Right: the paper's baseline_rl condition, retrained with the paper command. The icons are Craftax's 22 achievements; red marks the five the planner unlocked before fine-tuning but not after.</figcaption>
+      </figure>
+      <figure class="fig ticks">
+        <a href="assets/minihack-planner.gif">
+          <picture>
+            <source media="screen and (prefers-reduced-motion: no-preference)" srcset="assets/minihack-planner.gif">
+            <img src="assets/minihack-planner-poster.png" width="840" height="480" loading="lazy" alt="MiniHack Room-Random-15x15, evaluation layout 13: a masked diffusion planner fills in a 64-move plan in any order over 10 denoising steps; its first 7 moves lead straight to the stairs, and the agent follows them to win.">
+          </picture>
+        </a>
+        <figcaption>MiniHack Room-Random-15x15, evaluation layout 13, won in 7 moves by its first plan (picked by a fixed rule; the script prints it). Only 2 of the 50 evaluation layouts are won that directly; most wins replan several times. On this room it wins 38% of episodes, and 48.5% across the four in-distribution layouts (paper Table 8).</figcaption>
+      </figure>
+      <details>
+        <summary>BibTeX</summary>
+<pre><code>@inproceedings{khan2026returnweighted,
+  title     = {Return-Weighted {ELBO} Fine-Tuning Degrades Masked Diffusion Planners},
+  author    = {Muhammad Ali Khan and Mathis Weil and Ahmet H. G{\"u}zel and Jack Parker-Holder and Ilija Bogunovic},
+  booktitle = {Beyond Next Token Prediction: Diffusion and Flow Models for Next-Generation Decoding},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=VGyjG8Gy29}
+}</code></pre>
+      </details>
+    </article>
+
+    <article class="entry" id="thesis">
+      <div class="entry-head">
+        <h3>Federated Gradient Boosting for Commercial Insurance Risk Modelling</h3>
+        <span class="kicker">MSc thesis · UCL 2026</span>
+      </div>
+      <p class="venue">MSc thesis, UCL, in collaboration with Ki through UCL IXN · Supervisor: Prof Philip Treleaven · September 2026</p>
+      <p>Insurers cannot pool their claims data. I built a federated XGBoost benchmark in which each insurer keeps its raw records and shares only summary statistics such as gradient histograms, verified that it reproduces the pooled model, and measured insurer by insurer, under a pre-registered protocol, when sharing helps and when it hurts. Results here use the public freMTPL motor data: 678k policies across ten simulated insurers.</p>
+      <ul class="findings">
+        <li><strong>Federation reproduces pooling.</strong> On equal random splits it recovers a median 0.99 of the pooled model's per-insurer gain (pre-registered bar: 0.5), and a correctness gate checks it against the pooled model.</li>
+        <li><strong>Where sharing hurts, and a fix.</strong> As rate multipliers push claim rates apart, the shared model prices 0, then 5, then 7 of 10 insurers worse than their own model (worst: 16.2 points of deviance explained). On this dial, refitting one intercept per insurer puts all ten back above.</li>
+      </ul>
+      <p class="meta">XGBoost federated histogram aggregation · Hydra · 13.5k lines · 592 tests · strict mypy · CI</p>
+      <p class="role"><span class="label">Code</span>Private to Ki; access on request through Ki.</p>
+      <figure class="fig ticks">
+        <a href="assets/fedgbt-method-results.gif">
+          <picture>
+            <source media="screen and (prefers-reduced-motion: no-preference)" srcset="assets/fedgbt-method-results.gif">
+            <img src="assets/fedgbt-method-results-poster.png" width="840" height="480" loading="lazy" alt="Ten simulated insurers on public freMTPL motor data grow the same federated XGBoost tree: each sums its gradients per bin, a coordinator adds the sums and picks the best split, and every insurer applies it. As rate multipliers push their claim rates apart, the shared model prices 0, then 5, then 7 of 10 insurers worse than their own models, the worst by 16.21 points of deviance explained; on this dial one refitted intercept per insurer puts all ten back above their own models, with the harm before the refit shown in faint red.">
+          </picture>
+        </a>
+        <figcaption>Method panels are illustrative; results are public freMTPL data across ten simulated insurers, with claim rates pushed apart by rate multipliers.</figcaption>
+      </figure>
+    </article>
+
+  </div>
+</section>
+
+<section class="band" id="projects">
+  <h2 class="label">Other projects</h2>
+  <div class="content">
+    <ul class="projects">
+      <li class="entry">
+        <div class="entry-head">
+          <h3 class="small">Eviction-aware fine-tuning</h3>
+          <span class="kicker">UCL · 2026 · led the implementation</span>
+        </div>
+        <p>LoRA fine-tuning of Llama-3.2-1B while a learned policy (NAMM) evicts 75–85% of the KV cache: 28.9 F1 on five LongBench QA tasks, against 19.0 for standard fine-tuning under the same eviction and 32.6 with the full cache. UCL team project of five, built on Sakana AI's NAMM.</p>
+        <ul class="links">
+          <li><a href="https://github.com/mathisweil/evo-memory">Code</a></li>
+          <li><a href="https://github.com/mathisweil/evo-memory/blob/main/UCL_NLP_2026.pdf">Report (PDF)</a></li>
+        </ul>
+      </li>
+      <li class="entry">
+        <div class="entry-head">
+          <h3 class="small">SkillFindr</h3>
+          <span class="kicker">QMUL with IBM · 2024–2025 · sole developer</span>
+        </div>
+        <p>Semantic search and a RAG API over 1,200+ IBM SkillsBuild courses (Sentence-BERT, pgvector, FastAPI): Recall@20 0.899, MRR 0.843 and MAP@20 0.712 on 50 annotated queries; 27.6 ms average latency against 62.3 and 48.4 ms for the keyword and BM25 baselines, which returned results for only 4% and 6% of queries. QMUL final-year project with IBM.</p>
+        <ul class="links">
+          <li><a href="https://github.com/mathisweil/SkillFindr-SemanticSearchEngine">Code</a></li>
+        </ul>
+      </li>
+      <li class="entry">
+        <div class="entry-head">
+          <h3 class="small">BidBird</h3>
+          <span class="kicker">UCL team · Nov 2025</span>
+        </div>
+        <p>Planning- and appeal-outcome risk models (Random Forest, XGBoost) served through FastAPI. 1st place with a UCL team at the Bidwells Real Estate Planning Hackathon, November 2025.</p>
+        <ul class="links">
+          <li><a href="https://github.com/mathisweil/bidwell_hackathon">Code</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="background">
+  <h2 class="label">Background</h2>
+  <div class="content">
+    <dl class="dated">
+      <dt>Jun–Sep 2026</dt>
+      <dd><strong>Machine Learning Researcher</strong>, Ki · MSc thesis research, embedded in the underwriting team</dd>
+      <dt>May 2026</dt>
+      <dd>Co-authored <a href="https://web.archive.org/web/20260710225021/https://www.mgmt.ucl.ac.uk/sites/default/files/upload/Analytics%20Lab%202026%20.pdf"><em>The Human Transformation that will Power your Agentic Future</em></a> with the UCL School of Management Analytics Lab and Capgemini</dd>
+      <dt>2025–2026</dt>
+      <dd><strong>MSc Data Science and Machine Learning</strong>, University College London · thesis submitted September 2026, result pending<small>Statistical NLP 80/100 · Open-Endedness and General Intelligence 81/100</small></dd>
+      <dt>2025–2026</dt>
+      <dd><strong>Postgraduate Teaching Assistant</strong>, UCL · weekly practicals and marking for 280+ MSc and BSc students across four modules</dd>
+      <dt>2022–2025</dt>
+      <dd><strong>BSc Computer Science</strong>, Queen Mary University of London · First Class Honours (83%)<small>Lab demonstrator, Sep 2024 – May 2025, 400+ undergraduates</small></dd>
+    </dl>
+    <dl class="dated">
+      <dt>Awards</dt>
+      <dd>Final-Year Prize for Outstanding Academic Achievement, QMUL 2025 · Demonstrator of the Year 2025 (one of 14 in computer science) · 1st place, Bidwells Real Estate Planning Hackathon, November 2025 · 2nd of 20 teams, UCL Business Games (EY-Parthenon), 2025</dd>
+      <dt>Interests</dt>
+      <dd>Compute-efficient large language model inference · generative models for sequential decision-making · privacy-aware federated learning</dd>
+      <dt>Skills</dt>
+      <dd>Python (PyTorch, JAX, Hugging Face, PEFT, XGBoost, NumPy, pandas, scikit-learn), SQL (PostgreSQL, pgvector), R, Java · Git, Linux, Docker, GCP, Weights &amp; Biases, pytest</dd>
+      <dt>Languages</dt>
+      <dd>French (native) · English (fluent, C1) · German (intermediate)</dd>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <p class="label">Mathis Weil · London · <a class="primary" href="mailto:mathis.weil@outlook.com">Email</a> · <a class="primary" href="assets/mathis-weil-cv.pdf">CV (PDF)</a> · updated October 2026 · <a href="https://github.com/mathisweil/mathisweil.github.io">source</a></p>
+</footer>
+
+</body>
+</html>
