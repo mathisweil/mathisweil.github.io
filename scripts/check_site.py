@@ -288,6 +288,11 @@ def check_text(sources):
         for pattern in PHONE:
             if pattern.search(flat):
                 errors.append(f"{name}: looks like a phone number; phone numbers are never published")
+        for char, label in (("—", "em dash"), ("–", "en dash")):
+            i = flat.find(char)
+            if i >= 0:
+                errors.append(f"{name}: {label} in '{flat[max(0, i - 30):i + 30]}'. Mathis wants no en or em dashes: "
+                              "use a spaced hyphen ('Jun 2026 - Sep 2026', '75 to 85%')")
     return errors
 
 

@@ -35,7 +35,7 @@ Read `CLAUDE.md` first if it is not in context. `where-facts-live.md` (next to t
 Also:
 - Any change to visible text, links or images sets the footer "updated <Month YYYY>" and the sitemap `lastmod` for `/` to today (`docs/sitemap.xml`).
 - Kickers (`span.kicker`) stay at 36 characters or fewer; they never wrap.
-- Background rows are reverse-chronological; date ranges use an en dash (`Jun–Sep 2026`).
+- Background rows are reverse-chronological. Ranges use a spaced hyphen (`Jun 2026 - Sep 2026`, `2025 - 2026`, `75 to 85%`); Mathis wants no en or em dashes anywhere (the check enforces it).
 - Never change `og.png`, `og:image:alt` or the plan panel (64 cells, `script.js` depends on them) unless asked.
 
 **Profile README (`../mathisweil/README.md`)**: same facts in its own format (see `where-facts-live.md`); its News list has no counterpart on the site.

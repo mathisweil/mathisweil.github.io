@@ -10,10 +10,10 @@ Locations and formats only. Site = `docs/index.html`; Profile = `../mathisweil/R
 - Manual: LinkedIn headline and Open-to-work.
 
 ## Roles and dates
-- Site: first `dl.dated` in `#background`, newest first: `<dt>Jun–Sep 2026</dt><dd><strong>Title</strong>, Org · one line<small>optional sub-line</small></dd>`.
-- Profile: `## Background` bullets `- **Title**, Org, Jun–Sep 2026 · one line`.
+- Site: first `dl.dated` in `#background`, newest first: `<dt>Jun 2026 - Sep 2026</dt><dd><strong>Title</strong>, Org · one line<small>optional sub-line</small></dd>`.
+- Profile: `## Background` bullets `- **Title**, Org, Jun 2026 - Sep 2026 · one line`.
 - CV: `Title, Org | Jun 2026 - Sep 2026` (bold title run), an italic location or context line, then bullets, under RESEARCH EXPERIENCE, TEACHING EXPERIENCE or EXPERIENCE.
-- Current roles: Machine Learning Researcher, Ki (Jun–Sep 2026, past tense; MSc thesis research embedded in the underwriting team); Postgraduate Teaching Assistant, UCL (Sep 2025 – Jun 2026, four modules, 280+ students); Lab demonstrator, QMUL (Sep 2024 – May 2025, 400+ undergraduates).
+- Current roles: Machine Learning Researcher, Ki (Jun 2026 - Sep 2026, past tense; MSc thesis research embedded in the underwriting team); Postgraduate Teaching Assistant, UCL (Sep 2025 - Jun 2026, four modules, 280+ students); Lab demonstrator, QMUL (Sep 2024 - May 2025, 400+ undergraduates).
 - Manual: LinkedIn Experience, OpenReview career history, ORCID employment, GitHub `company` field.
 
 ## Education and thesis status
