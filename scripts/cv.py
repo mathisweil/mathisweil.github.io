@@ -104,6 +104,8 @@ def cmd_dump(args):
 
 
 def cmd_edit(args):
+    if args.docx.resolve() == PUBLIC_DOCX.resolve():
+        soffice()  # the docx and its PDF are committed together, so refuse edits that cannot be published here
     xml = read_doc(args.docx)
     if args.old:
         target = find(xml, args.old, "--old")

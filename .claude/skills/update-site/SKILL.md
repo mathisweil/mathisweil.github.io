@@ -10,7 +10,7 @@ Read `CLAUDE.md` first if it is not in context. `where-facts-live.md` (next to t
 
 ## 0. Start clean
 - `git status` and `git pull --ff-only` here, and in `../mathisweil` (the profile README repo) if that clone exists. Stop and ask if either has changes you did not make.
-- Cloud mode if `CLAUDE_CODE_REMOTE=true` (claude.ai/code): only this repo is reachable; see section 7.
+- Cloud mode if `CLAUDE_CODE_REMOTE=true` (claude.ai/code): only this repo is reachable and LibreOffice, ImageMagick and Chrome are absent. Edit `docs/` only: never `cv/` (`cv.py edit` refuses without LibreOffice) and never other repos. Read the profile README with `curl -s https://raw.githubusercontent.com/mathisweil/mathisweil/main/README.md` so your hand-over gives its exact new text. See section 7.
 - Before the first commit in a new environment, `git config user.email` must be `mathis.weil@outlook.com` or Mathis's GitHub noreply address; otherwise stop and ask.
 
 ## 1. Collect the facts, asking once for only what is missing
