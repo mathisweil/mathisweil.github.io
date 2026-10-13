@@ -1,0 +1,5 @@
+__pycache__/
+cv/build/
+.DS_Store
+.~lock*
+CLAUDE.local.md

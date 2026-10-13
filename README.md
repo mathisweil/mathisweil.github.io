@@ -1,12 +1,11 @@
 # mathisweil.github.io
 
-Personal site, live at https://mathisweil.github.io. Plain HTML, CSS and one small script, no build step; GitHub Pages serves the repository root (`.nojekyll` keeps Jekyll out of the way).
+Personal site of Mathis Weil, live at https://mathisweil.github.io. Plain HTML, CSS and one small script with no build step. GitHub Pages serves the `docs/` folder only, so nothing else in this repo is published.
 
-- All copy lives in `index.html`. The profile README at github.com/mathisweil/mathisweil is the source of truth: copy a changed sentence from there into the page, never the other way round, and keep each fact in one place.
-- The GIFs and the CV in `assets/` are byte copies of `mathisweil/assets/`. After replacing a GIF, re-export its poster with `convert "assets/<name>.gif[0]" -strip assets/<name>-poster.png`; `og.png` is the MiniHack poster at 200% with a point filter.
-- Portrait: `assets/portrait.jpg` (390x390, no EXIF or GPS). Before any upload, strip metadata with `exiftool -all= -tagsfromfile @ -icc_profile -overwrite_original <file>`.
-- Search Console: `google9877d2b0db4033da.html` and the `google-site-verification` meta tag verify the property, and Bing through it. Keep both.
-- Structured data: the JSON-LD in `<head>` repeats the tagline, the portrait path and the hero profile links. Update it when those change.
-- Sitemap: bump a URL's `lastmod` in `sitemap.xml` only when that page or the CV changes in substance.
-- Fonts in `assets/fonts/` are self-hosted STIX Two Text and Source Code Pro under the SIL Open Font License (licence files alongside).
-- Lighthouse flags the 1.4 MB Craftax GIF as a video opportunity. Accepted: the GIFs are the visual backbone and stay byte-identical to the profile.
+- **Edit**: page copy lives in `docs/index.html`; images, GIFs and the CV PDF in `docs/assets/`. Uploading through GitHub's web UI? Put files in `docs/assets/`, never at the root.
+- **Check**: `python3 scripts/check_site.py` (Python 3.9+, no dependencies). It also runs before every commit and push in Claude Code and on every push in GitHub Actions.
+- **CV**: the public CV source is `cv/mathis-weil-cv.docx`; `python3 scripts/cv.py publish` exports it with LibreOffice and installs the PDF.
+- **With Claude Code**: open a session in this repo (or on claude.ai/code with only this repo attached) and ask for the change, e.g. "add my new job to the website". `CLAUDE.md` holds the rules and the `update-site` skill the procedure. A fresh clone asks once to trust the folder; accept it so the checks run.
+- **Search Console**: `docs/google9877d2b0db4033da.html` and the `google-site-verification` meta tag verify the property (and Bing through it). Keep both.
+- **Fonts**: `docs/assets/fonts/` holds self-hosted STIX Two Text and Source Code Pro under the SIL Open Font License.
+- Lighthouse flags the 1.4 MB Craftax GIF as a video opportunity; accepted, since the GIFs stay byte-identical to the profile README's.

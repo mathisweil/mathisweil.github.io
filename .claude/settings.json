@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/check_site.py *)",
+      "Bash(python3 scripts/cv.py *)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git -C * commit *)",
+      "Bash(git -C * push *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git commit *)",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/scripts/check_site.py >&2 || exit 2"
+          },
+          {
+            "type": "command",
+            "if": "Bash(git push *)",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/scripts/check_site.py >&2 || exit 2"
+          }
+        ]
+      }
+    ]
+  }
+}
